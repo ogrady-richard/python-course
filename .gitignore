@@ -6,3 +6,6 @@ doc/raw/
 
 # Don't include any doxygen files
 */doxyfile
+
+# We don't need any screenshots to be added to out GitHub page.
+screenshots/
