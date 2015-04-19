@@ -25,7 +25,8 @@ This section was completed on Sunday, April 19th.
 - [Fourm Post 1](http://discussions.udacity.com/t/drawing-square-turtles-fs0415/14560/38)
 - [Forum Post 2](http://discussions.udacity.com/t/making-turtle-code-better-fs0415/14562/46)
 - [Forum Post 3](http://discussions.udacity.com/t/planning-to-draw-fs0415/14563/28)
-- [Forum Post 4]()
+- [Forum Post 4](http://discussions.udacity.com/t/turtle-mini-project-fs0415/14551/32?u=ogrady_richard)
+
 #### B
 __Coming Soon!__
 
