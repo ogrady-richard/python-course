@@ -1,0 +1,8 @@
+# No backup files, please
+*~
+
+# Don't include anything but the documentation PDFs from the documentation folder
+doc/raw/
+
+# Don't include any doxygen files
+*/doxyfile
