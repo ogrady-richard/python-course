@@ -19,6 +19,13 @@ This repository is for the Udacity "Programming Foundations with Python" course 
 
 The purpose of lesson 2A in this course is to familiarize oneself with the idea of Python classes. This particular section deals with Turtles, which is a simple python package that implements the traditional Turtle Graphics programming tool developed in 1966 as a way of teaching intry-level program design ([1](https://docs.python.org/2/library/turtle.html)). We will be doing a variety of projects with Turtles within this section.
 
+**Special thanks to [Willow Systems Corp](http://willow-systems.com/)** for their MIT Licenced [jSignature](http://willowsystems.github.io/jSignature/#/about/) app - digitizing my initials for the final mini project would have been much more difficult without thier help.
+
+This section was completed on Sunday, April 19th.
+- [Fourm Post 1](http://discussions.udacity.com/t/drawing-square-turtles-fs0415/14560/38)
+- [Forum Post 2](http://discussions.udacity.com/t/making-turtle-code-better-fs0415/14562/46)
+- [Forum Post 3](http://discussions.udacity.com/t/planning-to-draw-fs0415/14563/28)
+- [Forum Post 4]()
 #### B
 __Coming Soon!__
 
