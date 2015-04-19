@@ -37,6 +37,11 @@ window.bgcolor("red")
 # Create a Turtle object
 turtle_obj = turtle.Turtle()
 
+# Change the Turtles attributes
+turtle_obj.shape("turtle")
+turtle_obj.color("#00FFFF")
+turtle_obj.speed(1)
+
 # Call our new square-drawing turtle function
 draw_square()
 
