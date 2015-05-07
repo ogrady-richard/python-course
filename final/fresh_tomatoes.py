@@ -113,6 +113,7 @@ main_page_content = '''
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <p id="description"></p>
           </div>
         </div>
       </div>
@@ -129,6 +130,9 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
+    <p>{movie_actors}</p>
+    <p>{release_date}</p>
+    <img src={rating} style="height: 20px; width: 100px; margin: 15px;">
 </div>
 '''
 
@@ -140,12 +144,30 @@ def create_movie_tiles_content(movies):
         youtube_id_match = re.search(r'(?<=v=)[^&#]+', movie.trailer_youtube_url)
         youtube_id_match = youtube_id_match or re.search(r'(?<=be/)[^&#]+', movie.trailer_youtube_url)
         trailer_youtube_id = youtube_id_match.group(0) if youtube_id_match else None
+        
+        # Parse the actors list, so it looks pretty on the webpage
+        actors_readable = 'Starring '
+        for actor in movie.actors:
+            actors_readable += '<b>' + actor + '</b>, '
+            
+        actors_readable += " and others!"
+        
+        # Get the correct rating image
+        images = {0:'images/no_stars.png',
+                  1:'images/one_star.png',
+                  2:'images/two_star.png',
+                  3:'images/thr_star.png',
+                  4:'images/fou_star.png',
+                  5:'images/fiv_star.png'}
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            trailer_youtube_id=trailer_youtube_id,
+            movie_actors=actors_readable,
+            release_date="Released " + movie.release,
+            rating=images[movie.rating]
         )
     return content
 
