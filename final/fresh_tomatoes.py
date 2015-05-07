@@ -153,12 +153,12 @@ def create_movie_tiles_content(movies):
         actors_readable += " and others!"
         
         # Get the correct rating image
-        images = {0:'images/no_stars.png',
-                  1:'images/one_star.png',
-                  2:'images/two_star.png',
-                  3:'images/thr_star.png',
-                  4:'images/fou_star.png',
-                  5:'images/fiv_star.png'}
+        images = {'0':'images/no_stars.png',
+                  '1':'images/one_star.png',
+                  '2':'images/two_star.png',
+                  '3':'images/thr_star.png',
+                  '4':'images/fou_star.png',
+                  '5':'images/fiv_star.png'}
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
