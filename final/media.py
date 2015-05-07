@@ -1,5 +1,6 @@
 class Movie:
     ## Movie object constructor
+    #  @brief      | This class holds all the relevant data for a movie object
     #  @param t    | The movie title
     #  @param p    | The movies poster image URL
     #  @param u    | The movies trailer URL
