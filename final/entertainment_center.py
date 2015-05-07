@@ -14,7 +14,7 @@ movieData = []
 # Split our data using the designated semicolon delimited
 movieData = [element.split('; ') for element in rawData]
 
-# Iterate through our movie data list to add important data that the fresh tomatoes library requires
+# Iterate through our movie data list to add important data
 for element in movieData:
     element[1] = "images/"+element[1]
     element[2]= "https://www.youtube.com/watch?v="+element[2]
@@ -25,7 +25,8 @@ movieList = []
 
 # Iterate through the movie list, creating individual movie objects
 for element in movieData:
-    movieList.append( media.Movie(element[0],element[1],element[2],element[3],element[4],element[5]) )
+    movieList.append( media.Movie(element[0],element[1],element[2],element[3]
+                                            ,element[4],element[5]) )
 
 # Execute the fresh tomatoes core library function
 fresh_tomatoes.open_movies_page(movieList)
