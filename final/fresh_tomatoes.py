@@ -16,6 +16,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background: linear-gradient(360deg, #870000, #190A05);
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -35,9 +36,15 @@ main_page_head = '''
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+            transition: background-color 0.5s, border-radius 0.5s, color 0.5s;
+            border-radius: 50px;
+            color:white
         }
         .movie-tile:hover {
+            transition: background-color .5s, border-radius: 0.5s, color 0.5s;
             background-color: #EEE;
+            border-radius: 100px;
+            color:black;
             cursor: pointer;
         }
         .scale-media {
