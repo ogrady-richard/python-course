@@ -12,7 +12,7 @@ This is the README for the Fresh Tomatoes Movie Trailers webpage. For detailed i
 
 ### Using this code
 
-This code is dependant on the (Python programming Language)[https://www.python.org/] - please make sure you have that installed before you continue. It is also important that you have the Python 'webbrowser' library for web functionality.
+This code is dependant on the [Python programming Language](https://www.python.org/) - please make sure you have that installed before you continue. It is also important that you have the Python 'webbrowser' library for web functionality.
 
 The code provided will run fine as is. To modify your personal movies list, just add new movies to the bestFilms.txt file. It is important you follow the markdown below, otherwise the code will not work as intended. As of this version, there is no debugger to inform you your code doesn't work - if you can't see your updates, check your markdown for errors first.
 
@@ -36,4 +36,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ### Contact
 
-Please contact me through my (GitHub account)[https://github.com/ogrady-richard] or through (Udacity)[https://profiles.udacity.com/u/richardogrady]. Thanks!
+Please contact me through my [GitHub account](https://github.com/ogrady-richard) or through [Udacity](https://profiles.udacity.com/u/richardogrady). Thanks!
